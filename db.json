@@ -1,7 +1,7 @@
 {
   "articles": [
     {
-      "id": 1,
+      "id": "1",
       "image": "https://dl.next1code.ir/images/react/article1.webp",
       "title": "عنوان مقاله اول",
       "desc": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است .",
@@ -10,7 +10,7 @@
       "readingTime": "5"
     },
     {
-      "id": 2,
+      "id": "2",
       "image": "https://dl.next1code.ir/images/react/article2.webp",
       "title": "عنوان مقاله دوم",
       "desc": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است .",
@@ -19,7 +19,7 @@
       "readingTime": "11"
     },
     {
-      "id": 3,
+      "id": "3",
       "image": "https://dl.next1code.ir/images/react/article3.webp",
       "title": "عنوان مقاله سوم",
       "desc": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است .",
@@ -28,7 +28,7 @@
       "readingTime": "12"
     },
     {
-      "id": 4,
+      "id": "4",
       "image": "https://dl.next1code.ir/images/react/article4.webp",
       "title": "عنوان مقاله چهارم",
       "desc": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است .",
@@ -37,7 +37,7 @@
       "readingTime": "16"
     },
     {
-      "id": 5,
+      "id": "5",
       "image": "https://dl.next1code.ir/images/react/article5.webp",
       "title": "عنوان مقاله پنجم",
       "desc": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است .",
@@ -46,7 +46,7 @@
       "readingTime": "13"
     },
     {
-      "id": 6,
+      "id": "6",
       "image": "https://dl.next1code.ir/images/react/article6.webp",
       "title": "عنوان مقاله پنجم",
       "desc": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است .",
@@ -55,7 +55,7 @@
       "readingTime": "15"
     },
     {
-      "id": 7,
+      "id": "7",
       "image": "https://dl.next1code.ir/images/react/article7.webp",
       "title": "عنوان مقاله هفتم",
       "desc": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است .",
@@ -64,7 +64,7 @@
       "readingTime": "20"
     },
     {
-      "id": 8,
+      "id": "8",
       "image": "https://dl.next1code.ir/images/react/article8.webp",
       "title": "عنوان مقاله هشتم",
       "desc": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است .",
@@ -73,7 +73,7 @@
       "readingTime": "6"
     },
     {
-      "id": 9,
+      "id": "9",
       "image": "https://dl.next1code.ir/images/react/article1.webp",
       "title": "عنوان مقاله نهم",
       "desc": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است",
@@ -82,13 +82,28 @@
       "readingTime": "10"
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "مقاله ",
       "desc": "صنعت چاپ و با استفاده از طراحان گرافیک",
       "writter": "Amirhossein Kaviani",
       "category": "Web Developer",
       "image": "https://dl.next1code.ir/images/react/article8.webp",
       "readingTime": "60"
+    },
+    {
+      "id": "eb49"
+    },
+    {
+      "id": "e64d"
+    },
+    {
+      "id": "f7cb",
+      "title": "av",
+      "desc": "seg",
+      "writter": "seg",
+      "category": "seg",
+      "image": "sesg25",
+      "readingTime": "55"
     }
   ]
 }
