@@ -1,24 +1,48 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import MyNavbar from "../../components/navbar/Navbar";
 import { BsPencilSquare } from "react-icons/bs";
 import { BiTimeFive, BiCategoryAlt } from "react-icons/bi";
 import { MdDelete, MdOutlineEditCalendar } from "react-icons/md";
 import "./Article.css";
+import Swal from "sweetalert2";
 
 function Article() {
 
   const [articleData, setArticleData] = useState({});
   const articleId = useParams().articleId;
+  const navigate = useNavigate()
 
   useEffect(() => {
     axios
       .get(`http://localhost:5000/articles/${articleId}`)
       .then((response) => setArticleData(response.data));
   }, []);
-
+  const deleteHandler = (id) => {
+    Swal.fire({
+      title: 'مطمئنی میخوای مقاله رو حذف کنی؟',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'آره حذفش کن',
+      cancelButtonText : 'نه'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          title : 'مقاله با موفقیت حذف شد',
+          icon : 'success'
+        })
+        axios.delete(`http://localhost:5000/articles/${id}`)
+        navigate('/')
+      }
+    })
+  }
+  const editHandler = (id) => {
+    navigate(`/editarticle/${id}`)
+  }
   return (
     <>
       <MyNavbar />
@@ -45,10 +69,10 @@ function Article() {
                 </p>
               </div>
               <div className="cardFooter">
-                <Button variant="outline-danger">
+                <Button variant="outline-danger" onClick={() => deleteHandler(articleId)}>
                   <MdDelete size="25px" /> حذف مقاله
                 </Button>
-                <Button variant="outline-primary">
+                <Button variant="outline-primary" onClick={()=>editHandler(articleId)}>
                   <MdOutlineEditCalendar size="25px" /> ویرایش مقاله
                 </Button>
               </div>
